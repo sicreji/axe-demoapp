@@ -21,7 +21,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Build the new release :latest
-      run: docker build -t hosniah/orsys-ccb:latest .
+      run: docker build -t sicreji/orsys-ccb:latest .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
